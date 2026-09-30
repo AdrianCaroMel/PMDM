@@ -1,15 +1,37 @@
+# --------- Android / Gradle ---------
 *.iml
-.gradle
+.gradle/
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio / IntelliJ
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Config local de máquina
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+
+# Artefactos de compilación / distribución
+*.apk
+*.ap_
+*.aab
+
+# Firmas / claves (¡nunca al repo!)
+*.jks
+*.keystore
+*.keystore.properties
+
+# Archivos temporales y varios
+*.log
+*.tmp
+*~
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+Thumbs.db
+.vscode/
